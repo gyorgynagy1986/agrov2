@@ -165,7 +165,8 @@
           object-fit: cover;
           z-index: -1;
           object-position: center;
-          -webkit-animation: kenburns-left 15s linear infinite alternate; animation: kenburns-left 15s linear infinite alternate;
+          animation: kenburns-left 12s linear infinite alternate;
+          -webkit-animation: kenburns-left 12s linear infinite alternate;
 }
 
 

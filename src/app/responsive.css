@@ -1,0 +1,293 @@
+:root {
+  /* HERO Units */
+  --font-size-h1: 28px;
+  --line-height-h1: 32.09px;
+  --font-size-nav:18px;
+  --font-size-p: 21px;
+  --line-height-p: 25.2px;
+
+  --font-size-span: 17px;
+  --line-height-span: 19.48px;
+
+  --padding-top-text-container: 60px;
+  --padding-bottom-text-container: 90px;
+  --gap-text-container-helper: 50px;
+
+  --max-width-titles: 460px;
+  --gap-titles: 10px;
+
+  --fakeBtnContainerItems: 10px;
+
+  --padding-left-right-text-container: 90px;
+  --background-gradient-text-container: linear-gradient(
+    180deg,
+    #fff9ea 30%,
+    #e7ddc5 88%
+  );
+
+  --logo-container-background: aqua;
+
+  /* Increase by 20% at min-width: 1921px */
+  @media screen and (min-width: 1921px) {
+    --font-size-h1: 33.6px; /* 28px + 20% */
+    --line-height-h1: 38.51px; /* 32.09px + 20% */
+    --font-size-nav: 19px;
+    --font-size-p: 25.2px; /* 21px + 20% */
+    --line-height-p: 30.24px; /* 25.2px + 20% */
+
+    --font-size-span: 20.4px; /* 17px + 20% */
+    --line-height-span: 23.38px; /* 19.48px + 20% */
+
+    --padding-top-text-container: 72px; /* 60px + 20% */
+    --padding-bottom-text-container: 108px; /* 90px + 20% */
+    --gap-text-container-helper: 60px; /* 50px + 20% */
+
+    --fakeBtnContainerItems: 12px; /* 10px + 20% */
+
+    --max-width-titles: 552px; /* 460px + 20% */
+    --gap-titles: 12px; /* 10px + 20% */
+  }
+
+  @media screen and (max-width: 1200px) {
+    --font-size-nav: 16px;
+
+  }
+
+  
+}
+
+:root {
+  /* Inputanyag Units */
+  --padding-left-content: 90px;
+  --padding-right-content: 90px;
+  --padding-top-content: 60px;
+  --padding-bottom-content: 90px;
+
+  --list-item-font-size: 17px;
+
+  --gap-title-container: 10px;
+
+  --font-size-index: 1.25rem;
+  --font-size-title: 1.25rem;
+  --font-size-subtitle: 18px;
+  --margin-bottom-subtitle: 2.5rem;
+
+  --font-size-list-title: 1.125rem;
+  --margin-bottom-list-title: 0.5rem;
+
+  --gap-list: 0.5rem;
+  --margin-bottom-list: 1rem;
+
+  --margin-bottom-footer: 2.5rem;
+  --margin-bottom-bio-logo: 10px;
+
+  /* 20% Increase at min-width: 1921px */
+  @media screen and (min-width: 1921px) {
+    --padding-left-content: 108px; /* 90px + 20% */
+    --padding-right-content: 108px;
+    --padding-top-content: 72px;
+    --padding-bottom-content: 108px;
+
+    --list-item-font-size: 20.4px; /* 17px + 20% */
+
+    --gap-title-container: 12px; /* 10px + 20% */
+
+    --font-size-index: 1.5rem; /* 1.25rem + 20% */
+    --font-size-title: 1.5rem;
+    --font-size-subtitle:21.6px; /* 1rem + 20% */
+    --margin-bottom-subtitle: 3rem; /* 2.5rem + 20% */
+
+    --font-size-list-title: 1.35rem; /* 1.125rem + 20% */
+    --margin-bottom-list-title: 0.6rem; /* 0.5rem + 20% */
+
+    --gap-list: 0.6rem; /* 0.5rem + 20% */
+    --margin-bottom-list: 1.2rem; /* 1rem + 20% */
+
+    --margin-bottom-footer: 3rem; /* 2.5rem + 20% */
+    --margin-bottom-bio-logo: 12px; /* 10px + 20% */
+  }
+  @media screen and (max-width: 767px) {
+    --gap-text-container-helper: 30px;
+    --padding-top-text-container: 40px;
+    --padding-bottom-text-container: 40px;
+    --font-size-h1: 23px;
+    --font-size-p: 18px;
+  }
+
+}
+
+:root {
+  /* Termény Units */
+  --font-size-h2: 24px;
+  --line-height-h2: 27.5px;
+
+  --font-size-inputP: 18px;
+  --line-height-inputP: 25.2px;
+
+  --font-size-contactName: 21px;
+  --line-height-contactName: 24.07px;
+
+  --font-size-contactLink: 18px;
+  --line-height-contactLink: 25.2px;
+
+  --font-size-productTitle: 18px;
+  --line-height-productTitle: 25.2px;
+
+  --font-size-productList: 17px;
+  --line-height-productList: 20.4px;
+  --font-footer-text:18px;
+  --padding-left-right-section: 5vw;
+  --padding-bottom-section: 90px;
+  --padding-top-section: 60px;
+
+  --gap-containerHelper: 40px;
+  --gap-sectionText: 10px;
+  --gap-sectionTitleContainer: 10px;
+  --gap-contactContainer: 15px;
+  --gap-productContainer: 40px;
+  --gap-productList: 10px;
+  --footer-container-gap: 30px;
+  --margin-bottom-productTitle: 10px;
+  --margin-bottom-productList: 10px;
+  --margin-bottom-footerText: 10px;
+
+  --font-size-sectionNumber: 1.25rem;
+
+  /* Increase by 20% at min-width: 1921px */
+  @media screen and (min-width: 1921px) {
+    --font-size-h2: 28.8px; /* 24px + 20% */
+    --line-height-h2: 33px;
+    --font-footer-text:21.6px;
+
+    --font-size-inputP: 21.6px; /* 18px + 20% */
+    --line-height-inputP: 30.24px;
+
+    --font-size-contactName: 25.2px; /* 21px + 20% */
+    --line-height-contactName: 28.88px;
+
+    --font-size-contactLink: 21.6px;
+    --line-height-contactLink: 30.24px;
+
+    --font-size-productTitle: 21.6px;
+    --line-height-productTitle: 30.24px;
+
+    --font-size-productList: 20.4px; /* 17px + 20% */
+    --line-height-productList: 24.48px;
+
+    --padding-left-right-section: 6vw; /* 5vw + 20% */
+    --padding-bottom-section: 108px;
+    --padding-top-section: 72px;
+    --footer-container-gap: 36px;
+    --gap-containerHelper: 48px; /* 40px + 20% */
+    --gap-sectionText: 12px;
+    --gap-sectionTitleContainer: 12px;
+    --gap-contactContainer: 18px;
+    --gap-productContainer: 48px;
+    --gap-productList: 12px;
+
+    --margin-bottom-productTitle: 12px;
+    --margin-bottom-productList: 12px;
+    --margin-bottom-footerText: 12px;
+
+    --font-size-sectionNumber: 1.5rem; /* 1.25rem + 20% */
+  }
+
+  @media screen and (max-width: 767px) {
+    --font-size-h2:21px;
+    --font-size-subtitle:16px;
+    --font-size-productTitle:17px;
+    --margin-bottom-subtitle:20px;
+    --padding-top-content:30px;
+    --margin-bottom-list:20px;
+    --footer-container-gap:15px;
+    --padding-bottom-content:30px;
+    --font-footer-text:15px;
+    --font-size-inputP:16px;
+    --gap-containerHelper: 30px;
+    --gap-sectionText: 15px;
+    --font-size-contactName:17px
+    --font-size-contactLink:15px;
+    --gap-productContainer:30px;
+    --font-size-productList:15px;
+    --line-height-productList:18px;
+    --gap-productContainer:20px;
+  }
+}
+
+
+:root {
+  /* MAP  */
+  --color-primary: #222222;
+  --color-secondary: #004e1b;
+  --color-tooltip-bg: #ffffff;
+  --color-tooltip-border: #00000033;
+  --color-style-bg: #b8944c;
+  --color-shadow: #00000040;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+
+  /* Font Sizes and Line Heights */
+  --font-size-tile: 21px;
+  --font-size-h3: 18px;
+  --line-height-h3: 20.63px;
+
+  --font-size-pTitle: 18px;
+  --line-height-pTitle: 25.2px;
+
+  --font-size-name: 21px;
+  --line-height-name: 24.07px;
+
+  --font-size-tooltip: 12px;
+
+  /* Padding and Gaps */
+  --padding-container-top: 60px;
+  --padding-container-horizontal: 5vw;
+  --gap-textContainer: 20px;
+  --gap-containerMain: 40px;
+  --gap-kepviseloContainer: 10px;
+  --gap-nameContainer: 5px;
+
+  /* Tooltip */
+  --tooltip-width: 274px;
+  --tooltip-height: 96px;
+  --tooltip-top: 20px;
+  --tooltip-left: 50px;
+  --tooltip-padding: 5px;
+
+  /* Style Container */
+  --style-container-size: 30px;
+}
+
+/* Increase by 20% at max-width: 1921px */
+@media screen and (min-width: 1921px) {
+  :root {
+    --font-size-tile: 24.2px;
+    --font-size-h3: 21.6px; /* 18px + 20% */
+    --line-height-h3: 24.76px; /* 20.63px + 20% */
+
+    --font-size-pTitle: 21.6px;
+    --line-height-pTitle: 30.24px; /* 25.2px + 20% */
+
+    --font-size-name: 25.2px; /* 21px + 20% */
+    --line-height-name: 28.88px; /* 24.07px + 20% */
+
+    --font-size-tooltip: 14.4px; /* 12px + 20% */
+
+    --padding-container-top: 72px; /* 60px + 20% */
+    --padding-container-horizontal: 5vw; /* 6vw + 20% */
+    --gap-textContainer: 24px; /* 20px + 20% */
+    --gap-containerMain: 48px; /* 40px + 20% */
+    --gap-kepviseloContainer: 12px; /* 10px + 20% */
+    --gap-nameContainer: 6px; /* 5px + 20% */
+
+    --tooltip-width: 328.8px; /* 274px + 20% */
+    --tooltip-height: 115.2px; /* 96px + 20% */
+    --tooltip-top: 24px; /* 20px + 20% */
+    --tooltip-left: 60px; /* 50px + 20% */
+    --tooltip-padding: 6px; /* 5px + 20% */
+
+    --style-container-size: 36px; /* 30px + 20% */
+  }
+}

@@ -1,0 +1,78 @@
+.container {
+  background: linear-gradient(180deg, #004e1b -60.87%, #267331 100%);
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+}
+
+.innerContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 152px;
+  min-width: 112px; /* Equivalent to w-[152px] and min-w-28 */
+}
+
+.navMenu {
+  display: none;
+}
+
+.navMenu ul li {
+  font-size: var(--font-size-nav);
+  color: white;
+}
+
+.active {
+  color: #D4B265;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.activeLanguage {
+ font-weight: 600;
+ text-decoration: underline;
+}
+
+.navMenuLarge {
+  display: flex;
+  gap: 1rem; /* Equivalent to gap-3 */
+  color: white;
+  align-items: center;
+}
+
+.languageMenu {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: white;
+  font-size: var(--font-size-nav);
+}
+
+@media (min-width: 1100px) {
+  /* lg breakpoint for larger screens */
+  .navMenu {
+    display: block;
+    display: flex;
+    align-items: center;
+  }
+}

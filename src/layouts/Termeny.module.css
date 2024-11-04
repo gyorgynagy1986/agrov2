@@ -1,0 +1,199 @@
+/*Term*/
+
+.h2 {
+  font-size: var(--font-size-h2);
+  font-weight: 600;
+  font-family: asap;
+  line-height: var(--line-height-h2);
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #222222;
+}
+
+.productTitle {
+  font-size: var(--font-size-productTitle);
+  font-weight: 600;
+  line-height: var(--line-height-productTitle);
+  text-align: left;
+  color: #222222;
+  font-family: exo;
+  margin-bottom: var(--margin-bottom-productTitle);
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--footer-container-gap);
+}
+
+.subtitle {
+  font-size: var(--font-size-subtitle);
+  margin-bottom: var(--margin-bottom-subtitle);
+  font-weight: 400;
+  text-align: left;
+  font-family: exo;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-productList);
+  font-weight: 400;
+  font-family: exo;
+  line-height: var(--line-height-productList);
+}
+
+.container {
+  display: flex;
+  font-family: asap;
+  position: relative;
+  z-index: 10;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.imageContainer {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .imageContainer {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imageContainer {
+    height: 320px;
+  }
+}
+
+.image {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .image {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image {
+    height: 320px;
+  }
+}
+
+.contentContainer {
+  width: 50%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--background-gradient-text-container);
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: var(--padding-top-content);
+  padding-bottom: var(--padding-bottom-content);
+}
+
+@media screen and (max-width: 1024px) {
+  .contentContainer {
+    width: 100%;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  gap: var(--gap-title-container);
+}
+
+@media screen and (max-width: 600px) {
+  .titleContainer {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.index {
+  font-size: var(--font-size-index);
+  color: #bcbcbc;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 600px) {
+  .index {
+    margin-bottom: 10px;
+  }
+}
+
+.list {
+  display: grid;
+  font-weight: 600;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(4, auto);
+  gap: var(--gap-list);
+  margin-bottom: var(--margin-bottom-list);
+}
+
+@media screen and (max-width: 1249px) {
+  .list {
+    grid-template-columns:  repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, auto);
+    column-gap: 4rem;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(4, auto);
+  column-gap: 0rem;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+
+.listItem span {
+  color: #004e1b;
+  margin-right: 7.5px;
+}
+
+.footerText {
+  margin-bottom: var(--margin-bottom-footer);
+  font-family: exo;
+  font-size:var(--font-footer-text);
+} 
+
+.bioLogo {
+  margin-bottom: var(--margin-bottom-bio-logo);
+}
+
+@media screen and (max-width: 1024px) {
+  .logoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

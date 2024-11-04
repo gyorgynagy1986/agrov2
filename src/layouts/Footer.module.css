@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+  padding: 60px 5vw;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 249, 234, 0.2) 0%,
+    rgba(114, 193, 28, 0.3) 100%
+  );
+  display: flex;
+  justify-content: center;
+}
+
+.contentContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contentContainer img {
+  max-width: 184px;
+  height: auto;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.textContainer img {
+  margin: 20px 0;
+  width: 20px;
+  height: 20px;
+}
+
+.rigth {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  text-align: center;
+  color: #222222;
+}
+
+.desig {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 23.8px;
+  text-align: center;
+  color: #222222;
+}
+
+.desig a {
+  color: #004e1b;
+}

@@ -6,7 +6,7 @@ import Map from "@/layouts/Map";
 import { getDictionary } from './dictionaries';
 
 export default async function Home({ params: { lang } }) {
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary("hu");
   console.log(dict)
   return (
     <>

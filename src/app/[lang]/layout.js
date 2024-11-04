@@ -1,45 +1,30 @@
+// src/app/[lang]/layout.js
 import React from "react";
-import localFont from 'next/font/local'
-
-import "./../globals.css";
-import "./../responsive.css";
+import localFont from 'next/font/local';
+import "../globals.css";
+import "../responsive.css";
 import Nav from "@/layouts/Nav";
 import Footer from "@/layouts/Footer";
 
-
+// Load custom fonts
 const asap = localFont({
   src: './../fonts/Asap-Regular.ttf',
   variable: "--asap",
   display: 'swap',
   weight: "400",
-},
-{
-  src: './../fonts/Asap-SemiBold.ttf',
-  variable: "--asap",
-  weight: "600",
-  display: 'swap',
-})
+});
 
 const exo = localFont({
   src: './../fonts/Exo2-Regular.ttf',
   variable: "--exo",
   display: 'swap',
-},
-{
-  src: './../fonts/Exo2-SemiBold.ttf',
-  variable: "--exo",
-  display: 'swap',
-})
+});
 
-export async function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'srb' }];
-}
-
-
-export default function RootLayout({ children }) {
+export default function LangLayout({ children, params }) {
+  const lang = params.lang || 'hu'; // Default to Hungarian if no lang param is present
   return (
-    <html lang='hu'>
-      <body className={`${asap.variable} ${exo.variable} `}>
+    <html lang={lang}>
+      <body className={`${asap.variable} ${exo.variable}`}>
         <Nav />
         {children}
         <Footer />

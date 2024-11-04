@@ -33,6 +33,13 @@
   min-width: 112px; /* Equivalent to w-[152px] and min-w-28 */
 }
 
+@media screen and (max-width: 1000px) {
+  .logo {
+    width: 120px;
+    min-width: 112px; /* Equivalent to w-[152px] and min-w-28 */
+  }
+}
+
 .navMenu {
   display: none;
 }
@@ -89,4 +96,57 @@
 .hambi {
   display: block;
 }
+}
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #004E1B -60.87%, #267331 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.mobileMenuHeader {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.mobileMenuLogo {
+  width: 120px;
+}
+
+.mobileMenuCloseIcon {
+  width: 40px;
+  cursor: pointer;
+}
+
+.mobileMenuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mobileMenuList li {
+  margin: 20px 0;
+  font-size: 24px; /* Adjust size as needed */
+}
+
+.mobileMenuList li a {
+  color: white;
+  text-decoration: none;
+}
+
+.mobileMenuList li:hover a {
+  text-decoration: underline;
 }

@@ -27,8 +27,8 @@ const links = [
 
 const language = [
   { name: "HU", link: "/" },
-  { name: "EN", link: "/EN" },
-  { name: "SRB", link: "/SRB" },
+  { name: "EN", link: "/en" },
+  { name: "SRB", link: "/srb" },
 ];
 
 const Nav = ({sticky}) => {

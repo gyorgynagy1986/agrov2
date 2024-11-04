@@ -10,13 +10,13 @@ const Fotter = () => {
       <div className={styles.contentContainer}>
         <div>
           <a href="/">
-            <Image src={logoFotter} alt=""></Image>
+            <Image src={logoFotter} alt='Országos terménykereskedelem'></Image>
           </a>
         </div>
         <div className={styles.textContainer}>
           <a target="_blank" href="">
             {" "}
-            <Image src={facebook} alt=""></Image>
+            <Image src={facebook} alt='Országos terménykereskedelem'></Image>
           </a>
           <p className={styles.rigth}>
             Minden jog fenntartva © 2024 - MirAgro Kft.

@@ -13,7 +13,7 @@ const Termeny = () => {
           placeholder="blur"
           className={styles.image}
           src={Buza}
-          alt={alt.alt}
+          alt='Országos terménykereskedelem'
         />
       </div>
 
@@ -97,7 +97,7 @@ const Termeny = () => {
             <Image
               className={styles.bioLogo}
               src={BioLogo}
-              alt="Bio Garancia logo"
+              alt='Országos terménykereskedelem'
               width={70}
               height={70}
             />

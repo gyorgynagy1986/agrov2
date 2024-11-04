@@ -31,7 +31,7 @@ const language = [
   { name: "SRB", link: "/SRB" },
 ];
 
-const Nav = () => {
+const Nav = ({sticky}) => {
   const path = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -55,10 +55,10 @@ const Nav = () => {
   };
 
   return (
-    <nav className={styles.container}>
+    <nav className={`${styles.container} ${sticky && styles.sticky}`}>
       <div className={styles.innerContainer}>
         <div className={styles.imageContainer}>
-          <Image className={styles.logo} src={logo} alt={meta.name} />
+          <Image className={styles.logo} src={logo} alt='Országos terménykereskedelem'/>
         </div>
         <div className={styles.navMenu}>
           <ul className={`${styles.navMenuLarge} ${asap.className} `}>
@@ -74,7 +74,7 @@ const Nav = () => {
         <div>
           <Image
             className={styles.hambi}
-            alt="hambi"
+            alt='Országos terménykereskedelem'
             src={hambi}
             onClick={toggleMenu}
           />
@@ -97,12 +97,12 @@ const Nav = () => {
             <Image
               className={styles.mobileMenuLogo}
               src={logo}
-              alt="Logo"
+              alt='Országos terménykereskedelem'
             />
             <Image
               className={styles.mobileMenuCloseIcon}
               src={hambi}
-              alt="Close Menu"
+              alt='Országos terménykereskedelem'
               onClick={closeMenu}
             />
           </div>
@@ -116,7 +116,7 @@ const Nav = () => {
               </li>
             ))}
           </ul>
-          <Image className={styles.facebook} alt="" src={facebook}></Image>
+          <Image className={styles.facebook} alt='Országos terménykereskedelem' src={facebook}></Image>
           </div>
           {/* Language menu within mobile menu */}
           <ul className={`${styles.mobileLanguageMenu}`}>

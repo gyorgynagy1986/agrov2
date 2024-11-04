@@ -1,14 +1,37 @@
 "use client";
+import React, { useState, useRef, useEffect } from "react";
 
 import Image from "next/image";
 import { alt } from "@/doc/alt";
 import HeroPhoto from "../../public/assets/hero2.png";
 import Logo from "../../public/assets/logo.png";
 import styles from "./Hero.module.css";
+import StickyNav from "@/layouts/Nav";
 
 const Hero = () => {
+  const menuRef = useRef(null);
+  const [stickyNav, setStickyNav] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStickyNav(false);
+        } else {
+          setStickyNav(true);
+        }
+      },
+      { rootMargin: "0px 20px 20px 20px" }
+    );
+
+    setTimeout(() => {
+      observer.observe(menuRef.current);
+    }, 1000); // 1 másodperc késleltetés
+  }, []);
+
   return (
-    <div className={styles.heroContainer}>
+    <div ref={menuRef} className={styles.heroContainer}>
+      {stickyNav && <StickyNav sticky={true} />}
       <div className={styles.textContainer}>
         <div className={styles.textContainerHelper}>
           <Image src={Logo}></Image>
@@ -35,7 +58,7 @@ const Hero = () => {
           priority
           className={`${styles.heroImage} ${styles.kenburnsLeft}`}
           src={HeroPhoto}
-          alt={alt.alt}
+          alt="Országos terménykereskedelem"
         />
       </div>
     </div>

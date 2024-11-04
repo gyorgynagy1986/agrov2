@@ -29,7 +29,7 @@ const InputAnyag = () => {
                   quality={100}
                   height={60}
                   src={Aniko}
-                  alt={alt.alt}
+                  alt="Országos terménykereskedelem"
                 />
               </div>
               <div className="flex flex-col justify-center">
@@ -92,7 +92,7 @@ const InputAnyag = () => {
           placeholder="blur"
           className={styles.image}
           src={Buza}
-          alt={alt.alt}
+          alt="Országos terménykereskedelem"
         />
       </div>
     </div>

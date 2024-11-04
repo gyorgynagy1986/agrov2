@@ -33,7 +33,7 @@ const Hero = () => {
       <div className={styles.imgContainer}>
         <Image
           priority
-          className={styles.heroImage}
+          className={`${styles.heroImage} ${styles.kenburnsLeft}`}
           src={HeroPhoto}
           alt={alt.alt}
         />

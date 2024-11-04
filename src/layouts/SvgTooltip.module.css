@@ -85,6 +85,7 @@
   padding-bottom: var(--padding-container-top);
   overflow: hidden;
   background-color: #ffffff;
+  font-family: asap;
 }
 
 .textContainer {

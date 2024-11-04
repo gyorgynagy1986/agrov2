@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import styles from "./SvgTooltip.module.css";
+import mobilemap from '../../public/assets/map_mobile.svg'
+import Image from "next/image";
 
 const Map = () => {
   const [tooltip, setTooltip] = useState({
@@ -73,6 +75,10 @@ const Map = () => {
           </div>
         </div>
       </div>
+
+        <div className={styles.mobileMapContainer}>
+          <Image src={mobilemap}></Image>
+        </div>
 
       <div className={styles.imageContainer}>
         <svg

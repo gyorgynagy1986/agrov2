@@ -32,7 +32,6 @@
 }
 
 .textContainer img {
-  margin: 20px 0;
   width: 20px;
   height: 20px;
 }
@@ -43,7 +42,9 @@
   line-height: 25.2px;
   text-align: center;
   color: #222222;
+  font-family: exo;
 }
+
 
 .desig {
   font-size: 17px;
@@ -51,8 +52,21 @@
   line-height: 23.8px;
   text-align: center;
   color: #222222;
+  font-family: exo;
+
+}
+
+@media screen and (max-width:600px) {
+  .rigth {
+    max-width: 219px;
+  }
+
+  .desig {
+    max-width: 219px;
+  }
 }
 
 .desig a {
   color: #004e1b;
+  text-decoration: underline;
 }

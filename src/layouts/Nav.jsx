@@ -9,6 +9,7 @@ import { Lexend_Deca } from "next/font/google";
 import logo from "../../public/assets/logo_white.svg";
 import styles from "./Nav.module.css";
 import Link from "next/link";
+import hambi from '../../public/assets/hambi.svg'
 
 const asap = Asap({ subsets: ["latin"] });
 const lexend = Lexend_Deca({ subsets: ["latin"] });
@@ -51,6 +52,7 @@ const path = usePathname();
           
         </div>
         <div>
+          <Image className={styles.hambi} alt="hambi" src={hambi}></Image>
           <ul className={`${styles.languageMenu} ${asap.className}`}>
           {language.map((link, index) => (
               <li key={index}>

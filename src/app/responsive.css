@@ -1,3 +1,5 @@
+
+
 :root {
   /* HERO Units */
   --font-size-h1: 28px;
@@ -27,10 +29,6 @@
 
   --logo-container-background: aqua;
 
-}
-
-:root {
-  /* Inputanyag Units */
   --padding-left-content: 90px;
   --padding-right-content: 90px;
   --padding-top-content: 60px;
@@ -54,9 +52,6 @@
   --margin-bottom-footer: 2.5rem;
   --margin-bottom-bio-logo: 10px;
 
-}
-
-:root {
   /* Termény Units */
   --font-size-h2: 24px;
   --line-height-h2: 27.5px;
@@ -92,10 +87,6 @@
   --margin-bottom-footerText: 10px;
 
   --font-size-sectionNumber: 1.25rem;
-}
-
-
-:root {
   /* MAP  */
   --color-primary: #222222;
   --color-secondary: #004e1b;
@@ -120,7 +111,6 @@
   --line-height-name: 24.07px;
 
   --font-size-tooltip: 12px;
-
   /* Padding and Gaps */
   --padding-container-top: 60px;
   --padding-container-horizontal: 5vw;
@@ -139,6 +129,8 @@
   /* Style Container */
   --style-container-size: 30px;
 }
+
+
 
 /* Increase by 20% at max-width: 1921px */
 @media screen and (min-width: 1921px) {
@@ -248,6 +240,19 @@
 }
 
 
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --font-size-nav:17px;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  :root {
+    --font-size-nav:16px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   :root {
   --font-size-h2:21px;
@@ -268,10 +273,14 @@
   --font-size-productList:15px;
   --line-height-productList:18px;
   --gap-productContainer:20px;
+  --padding-container-top:30px;
   --gap-text-container-helper: 30px;
   --padding-top-text-container: 40px;
   --padding-bottom-text-container: 40px;
   --font-size-h1: 23px;
   --font-size-p: 18px;
+  --font-size-h3:15px;
+  --font-size-name: 17px;
+  --line-height-pTitle:21px;
   }
 }

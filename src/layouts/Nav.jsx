@@ -10,6 +10,7 @@ import logo from "../../public/assets/logo_white.svg";
 import styles from "./Nav.module.css";
 import Link from "next/link";
 import hambi from '../../public/assets/hambi.svg';
+import facebook from '../../public/assets/facebook_white.svg'
 
 const asap = Asap({ subsets: ["latin"] });
 const lexend = Lexend_Deca({ subsets: ["latin"] });
@@ -22,6 +23,12 @@ const links = [
   { name: "Rólunk", link: "#" },
   { name: "Elérhetőség", link: "#" },
   { name: "Nemes ügyeink", link: "#" },
+];
+
+const language = [
+  { name: "HU", link: "/" },
+  { name: "EN", link: "/EN" },
+  { name: "SRB", link: "/SRB" },
 ];
 
 const Nav = () => {
@@ -71,6 +78,15 @@ const Nav = () => {
             src={hambi}
             onClick={toggleMenu}
           />
+          <ul className={`${styles.languageMenu} ${asap.className}`}>
+            {language.map((link, index) => (
+              <li key={index}>
+                <Link className={path === link.link ? styles.activeLanguage : ''} href={link.link}>
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
@@ -90,11 +106,24 @@ const Nav = () => {
               onClick={closeMenu}
             />
           </div>
-          <ul className={`${styles.mobileMenuList} ${asap.className}`}>
+          <div className={styles.helper}>
+          <ul className={`${styles.mobileMenuList}`}>
             {links.map((link, index) => (
               <li key={index} onClick={closeMenu}>
-                <Link href={link.link}>
-                  {link.name}
+                <Link className={path === link.link ? styles.active : ''} href={link.link}>
+                {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Image className={styles.facebook} alt="" src={facebook}></Image>
+          </div>
+          {/* Language menu within mobile menu */}
+          <ul className={`${styles.mobileLanguageMenu}`}>
+            {language.map((link, index) => (
+              <li key={index} onClick={closeMenu}>
+                <Link className={path === link.link ? styles.activeLanguage : ''} href={link.link}>
+                {link.name}
                 </Link>
               </li>
             ))}

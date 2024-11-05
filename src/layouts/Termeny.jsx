@@ -4,7 +4,7 @@ import Buza from "../../public/assets/buza.png";
 import BioLogo from "../../public/assets/bioLogo.png";
 import styles from "./Termeny.module.css";
 
-const Termeny = () => {
+const Termeny = ({ language }) => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
@@ -12,7 +12,7 @@ const Termeny = () => {
           placeholder="blur"
           className={styles.image}
           src={Buza}
-          alt='Országos terménykereskedelem'
+          alt={language.h1}
         />
       </div>
 
@@ -25,27 +25,15 @@ const Termeny = () => {
             </div>
 
             <div>
-              <h2 className={styles.h2}>Terménykereskedelem</h2>
-              <p className={styles.subtitle}>Bio és konvencionális termények</p>
+              <h2 className={styles.h2}>{language.title}</h2>
+              <p className={styles.subtitle}>{language.subtitle}</p>
             </div>
           </div>
 
           {/* Regular products */}
-          <h3 className={styles.productTitle}>Szokvány termények</h3>
+          <h3 className={styles.productTitle}>{language.productTitle1}</h3>
           <ul className={styles.list}>
-            {[
-              "Búza",
-              "Árpa",
-              "Kukorica",
-              "Napraforgó",
-              "Zab",
-              "Szója",
-              "Triticalé",
-              "Repce",
-              "Rozs",
-              "Durum",
-              "Tönköly",
-            ].map((item) => (
+            {language.productList1.map((item) => (
               <li className={styles.listItem} key={item}>
                 <span>▪️</span>
                 {item}
@@ -54,20 +42,9 @@ const Termeny = () => {
           </ul>
 
           {/* Special products */}
-          <h3 className={styles.productTitle}>Speciális termények</h3>
+          <h3 className={styles.productTitle}>{language.productTitle2}</h3>
           <ul className={styles.list}>
-            {[
-              "Borsó",
-              "Sörárpa",
-              "Popcorn",
-              "Csíkos napraforgó",
-              "Kömény",
-              "Fénymag",
-              "Köles",
-              "Lenmag",
-              "Mák",
-              "Piros kukorica",
-            ].map((item) => (
+            {language.productList2.map((item) => (
               <li
                 style={{ whiteSpace: "nowrap" }}
                 className={styles.listItem}
@@ -81,14 +58,12 @@ const Termeny = () => {
 
           {/* Bio products */}
           <div className={styles.footerContainer}>
-          <h3 className={styles.productTitle}>BIO termények</h3>
+            <h3 className={styles.productTitle}>{language.productTitle3}</h3>
 
-          {/* Footer section */}
-          <p className={styles.footerText}>
-            A MirAgro Kft.-nél széles termékpalettával, rugalmas hozzáállással,
-            egyénre szabott fizetési feltételekkel és kiemelt logisztikai
-            támogatással várjuk ügyfeleinket!
-          </p>
+            {/* Footer section */}
+            <p className={styles.footerText}>
+              {language.footerText}
+            </p>
           </div>
 
           {/* Bio Garancia logo */}
@@ -96,7 +71,7 @@ const Termeny = () => {
             <Image
               className={styles.bioLogo}
               src={BioLogo}
-              alt='Országos terménykereskedelem'
+              alt={language.h1}
               width={70}
               height={70}
             />

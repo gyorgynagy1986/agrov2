@@ -15,8 +15,8 @@ export default async function Home({ params }) {
     <>
       <Hero language={dict.content} />
       <main>
-        <Termeny />
-        <InputAnyag />
+        <Termeny language={dict.content} />
+        <InputAnyag language={dict.content} />
         <Map />
       </main>
     </>

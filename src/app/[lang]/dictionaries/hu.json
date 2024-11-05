@@ -18,9 +18,33 @@
       { "name": "HU", "link": "/hu" },
       { "name": "EN", "link": "/en" },
       { "name": "SRB", "link": "/srb" }
-    ]
+    ],
+    "inputH2": "Input anyag kereskedelem",
+    "inputP": "Inputanyag értékesítés",
+    "inputName": "Cserenyec Anikó",
+    "inputPhone": "+36 70 662 27 50",
+    "inputH3": "Műtrágyák",
+    "inputList": "Nitrogén alapú műtrágyák",
+    "inputList2": "Komplex műtrágyák",
+    "inputList3": "Vetőmag",
+    "inputList4": "Őszi, tavaszi vetőmagok",
+    "inputList5": "Egyéb, speciális vetőmagok",
+    "inputH32": "Termésnövelők",
+    "inputList6": "Biostimulátorok",
+    "inputList7": "Lombtrágyák",
+    "inputList8": "Növénykondícionálók",
+    "inputP2": "Keressen minket egyénre szabott ajánlatokért, ütemezett szállítási lehetőségekért, valamint biotermesztésben is használt anyagokért!",
+    "title": "Terménykereskedelem",
+    "subtitle": "Bio és konvencionális termények",
+    "productTitle1": "Szokvány termények",
+    "productList1": [
+      "Búza", "Árpa", "Kukorica", "Napraforgó", "Zab", "Szója", "Triticalé", "Repce", "Rozs", "Durum", "Tönköly"
+    ],
+    "productTitle2": "Speciális termények",
+    "productList2": [
+      "Borsó", "Sörárpa", "Popcorn", "Csíkos napraforgó", "Kömény", "Fénymag", "Köles", "Lenmag", "Mák", "Piros kukorica"
+    ],
+    "productTitle3": "BIO termények",
+    "footerText": "A MirAgro Kft.-nél széles termékpalettával, rugalmas hozzáállással, egyénre szabott fizetési feltételekkel és kiemelt logisztikai támogatással várjuk ügyfeleinket!"
   }
-  
 }
-
-

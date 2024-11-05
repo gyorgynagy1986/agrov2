@@ -5,7 +5,7 @@ import Aniko from "../../public/assets/aniko.png";
 import { alt } from "@/doc/alt";
 import styles from "./InputAnyag.module.css";
 
-const InputAnyag = () => {
+const InputAnyag = ({language}) => {
   return (
     <div className={styles.container}>
       <div className={styles.leftSection}>
@@ -16,12 +16,12 @@ const InputAnyag = () => {
             </div>
 
             <div>
-              <h2 className={styles.h2}>Input anyag kereskedelem</h2>
+              <h2 className={styles.h2}>{language.inputH2}</h2>
             </div>
           </div>
 
           <div className={styles.sectionText}>
-            <p className={styles.inputP}>Inputanyag értékesítés</p>
+            <p className={styles.inputP}>{language.inputP}</p>
             <div className={styles.contactContainer}>
               <div>
                 <Image
@@ -44,46 +44,41 @@ const InputAnyag = () => {
           {/* Regular products */}
           <div className={styles.productContainer}>
             <div>
-              <h3 className={styles.productTitle}>Műtrágyák</h3>
+              <h3 className={styles.productTitle}>{language.inputH3}</h3>
               <ul className={styles.productList}>
                 <li>
-                  <span className={styles.productBullet}>▪️</span>Nitrogén alapú
-                  műtrágyák
+                  <span className={styles.productBullet}>▪️</span>{language.inputList}
                 </li>
                 <li>
-                  <span className={styles.productBullet}>▪️</span>Komplex
-                  műtrágyák
+                  <span className={styles.productBullet}>▪️</span>{language.inputList2}
                 </li>
               </ul>
             </div>
             <div>
               {/* Special products */}
-              <h3 className={`${styles.productTitle}`}>Vetőmag</h3>
+              <h3 className={`${styles.productTitle}`}>{language.inputList3}</h3>
               <ul className={styles.productList}>
                 <li>
-                  <span className={styles.productBullet}>▪️</span>Őszi, tavaszi
-                  vetőmagok
+                  <span className={styles.productBullet}>▪️</span>{language.inputList4}
                 </li>
                 <li>
-                  <span className={styles.productBullet}>▪️</span>Egyéb,
-                  speciális vetőmagok
+                  <span className={styles.productBullet}>▪️</span>{language.inputList5}
                 </li>
               </ul>
             </div>
             <div>
               {/* Bio products */}
-              <h3 className={`${styles.productTitle} `}>Termésnövelők</h3>
+              <h3 className={`${styles.productTitle} `}>{language.inputH32}</h3>
               <ul className={styles.productList}>
-                <li>▪️ Biostimulátorok</li>
-                <li>▪️ Lombtrágyák</li>
-                <li>▪️ Növénykondícionálók</li>
+                <li>▪️ {language.inputList6}</li>
+                <li>▪️ {language.inputList7}</li>
+                <li>▪️ {language.inputList8}</li>
               </ul>
             </div>
           </div>
           {/* Footer section */}
           <p className={styles.footerText}>
-            Keressen minket egyénre szabott ajánlatokért, ütemezett szállítási
-            lehetőségekért, valamint biotermesztésben is használt anyagokért!
+          {language.inputP2}
           </p>
         </div>
       </div>

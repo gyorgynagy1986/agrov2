@@ -1,5 +1,26 @@
 {
-    "products": {
-      "cart": "Országos terménykereskedelem"
-    }
+  "content": {
+    "h1": "Országos terménykereskedelem",
+    "p": "100%-ban magyar, családi vállalkozás többgenerációs termelői tapasztalattal",
+    "btn": "VERSENYKÉPES ÁRAK",
+    "btn1": "RUGALMAS SZÁLLÍTÁS",
+    "btn2": "GYORS FIZETÉS",
+    "links": [
+      { "name": "Főoldal", "link": "/" },
+      { "name": "Terménykereskedelem", "link": "/#termekkereskedelem" },
+      { "name": "Inputanyag", "link": "#" },
+      { "name": "Területi képviselők", "link": "#" },
+      { "name": "Rólunk", "link": "#" },
+      { "name": "Elérhetőség", "link": "#" },
+      { "name": "Nemes ügyeink", "link": "#" }
+    ],
+    "language": [
+      { "name": "HU", "link": "/" },
+      { "name": "EN", "link": "/en" },
+      { "name": "SRB", "link": "/srb" }
+    ]
   }
+  
+}
+
+

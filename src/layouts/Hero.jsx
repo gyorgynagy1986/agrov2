@@ -2,15 +2,17 @@
 import React, { useState, useRef, useEffect } from "react";
 
 import Image from "next/image";
-import { alt } from "@/doc/alt";
 import HeroPhoto from "../../public/assets/hero2.png";
 import Logo from "../../public/assets/logo.png";
 import styles from "./Hero.module.css";
-import StickyNav from "@/layouts/Nav";
+import Sticky from "@/layouts/Nav";
 
 const Hero = ({language}) => {
   const menuRef = useRef(null);
   const [stickyNav, setStickyNav] = useState(false);
+
+  console.log(stickyNav)
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -31,15 +33,14 @@ const Hero = ({language}) => {
 
   return (
     <div ref={menuRef} className={styles.heroContainer}>
-     
+    { stickyNav && <Sticky sticky={stickyNav} navContent={language} />}
       <div className={styles.textContainer}>
         <div className={styles.textContainerHelper}>
           <Image src={Logo}></Image>
           <div className={styles.titles}>
-            <h1 className={`${styles.h1}`}>{language.products.cart}</h1>
+            <h1 className={`${styles.h1}`}>{language.h1}</h1>
             <p className={`${styles.p}`}>
-              100%-ban magyar, családi vállalkozás többgenerációs termelői
-              tapasztalattal
+            {language.p}
             </p>
           </div>
           <div className={styles.fakeBtnContainer}>

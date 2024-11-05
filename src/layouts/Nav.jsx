@@ -31,9 +31,12 @@ const language = [
   { name: "SRB", link: "/srb" },
 ];
 
-const Nav = ({sticky}) => {
+const Nav = ({sticky, navContent}) => {
   const path = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+  console.log(navContent)
 
   useEffect(() => {
     // Disable scrolling when the menu is open
@@ -58,11 +61,11 @@ const Nav = ({sticky}) => {
     <nav className={`${styles.container} ${sticky && styles.sticky}`}>
       <div className={styles.innerContainer}>
         <div className={styles.imageContainer}>
-          <Image priority className={styles.logo} src={logo} alt='Országos terménykereskedelem'/>
+          <Image className={styles.logo} src={logo} alt='Országos terménykereskedelem'/>
         </div>
         <div className={styles.navMenu}>
           <ul className={`${styles.navMenuLarge} ${asap.className} `}>
-            {links.map((link, index) => (
+            {navContent.links.map((link, index) => (
               <li key={index}>
                 <Link className={path === link.link ? styles.active : ''} href={link.link}>
                   {link.name}
@@ -76,11 +79,10 @@ const Nav = ({sticky}) => {
             className={styles.hambi}
             alt='Országos terménykereskedelem'
             src={hambi}
-            priority
             onClick={toggleMenu}
           />
           <ul className={`${styles.languageMenu} ${asap.className}`}>
-            {language.map((link, index) => (
+            {navContent.language.map((link, index) => (
               <li key={index}>
                 <Link className={path === link.link ? styles.activeLanguage : ''} href={link.link}>
                   {link.name}
@@ -109,7 +111,7 @@ const Nav = ({sticky}) => {
           </div>
           <div className={styles.helper}>
           <ul className={`${styles.mobileMenuList}`}>
-            {links.map((link, index) => (
+            {navContent.links.map((link, index) => (
               <li key={index} onClick={closeMenu}>
                 <Link className={path === link.link ? styles.active : ''} href={link.link}>
                 {link.name}
@@ -121,7 +123,7 @@ const Nav = ({sticky}) => {
           </div>
           {/* Language menu within mobile menu */}
           <ul className={`${styles.mobileLanguageMenu}`}>
-            {language.map((link, index) => (
+            {navContent.language.map((link, index) => (
               <li key={index} onClick={closeMenu}>
                 <Link className={path === link.link ? styles.activeLanguage : ''} href={link.link}>
                 {link.name}

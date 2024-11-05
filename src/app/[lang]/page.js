@@ -13,7 +13,7 @@ export default async function Home({ params }) {
 
   return (
     <>
-      <Hero language={dict} />
+      <Hero language={dict.content} />
       <main>
         <Termeny />
         <InputAnyag />

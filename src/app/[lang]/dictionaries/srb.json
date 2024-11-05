@@ -1,5 +1,25 @@
 {
-    "products": {
-      "cart": "Nacionalna trgovina poljoprivrednim proizvodima"
-    }
+  "content": {
+    "h1": "Nacionalna Trgovina Usevima",
+    "p": "100% mađarski, porodični biznis sa višegeneracijskim iskustvom u poljoprivredi",
+    "btn": "KONKURENTNE CENE",
+    "btn1": "FLEKSIBILNA DOSTAVA",
+    "btn2": "BRZA ISPLATA",
+    "links": [
+      { "name": "Početna", "link": "/" },
+      { "name": "Trgovina Usevima", "link": "/#termekkereskedelem" },
+      { "name": "Ulazni Materijali", "link": "#" },
+      { "name": "Regionalni Predstavnici", "link": "#" },
+      { "name": "O Nama", "link": "#" },
+      { "name": "Kontakt", "link": "#" },
+      { "name": "Naši Plemeniti Ciljevi", "link": "#" }
+    ],
+    "language": [
+      { "name": "HU", "link": "/" },
+      { "name": "EN", "link": "/en" },
+      { "name": "SRB", "link": "/srb" }
+    ]
   }
+}
+
+

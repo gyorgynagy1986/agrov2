@@ -1,5 +1,27 @@
 {
-    "products": {
-      "cart": "National produce trade"
-    }
+  "content": {
+    "h1": "National Crop Trading",
+    "p": "100% Hungarian, family-owned business with multi-generational farming experience",
+    "btn": "COMPETITIVE PRICES",
+    "btn1": "FLEXIBLE DELIVERY",
+    "btn2": "FAST PAYMENT",
+    "links": [
+      { "name": "Home", "link": "/" },
+      { "name": "Crop Trading", "link": "/#termekkereskedelem" },
+      { "name": "Input Materials", "link": "#" },
+      { "name": "Regional Representatives", "link": "#" },
+      { "name": "About Us", "link": "#" },
+      { "name": "Contact", "link": "#" },
+      { "name": "Our Noble Causes", "link": "#" }
+    ],
+    "language": [
+      { "name": "HU", "link": "/" },
+      { "name": "EN", "link": "/en" },
+      { "name": "SRB", "link": "/srb" }
+    ]
   }
+}
+
+
+
+

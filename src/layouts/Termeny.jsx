@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Buza from "../../public/assets/buza.png";
 import BioLogo from "../../public/assets/bioLogo.png";
-import { alt } from "@/doc/alt";
 import styles from "./Termeny.module.css";
 
 const Termeny = () => {

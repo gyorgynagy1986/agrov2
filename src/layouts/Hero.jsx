@@ -8,7 +8,7 @@ import Logo from "../../public/assets/logo.png";
 import styles from "./Hero.module.css";
 import StickyNav from "@/layouts/Nav";
 
-const Hero = () => {
+const Hero = ({language}) => {
   const menuRef = useRef(null);
   const [stickyNav, setStickyNav] = useState(false);
 
@@ -36,7 +36,7 @@ const Hero = () => {
         <div className={styles.textContainerHelper}>
           <Image src={Logo}></Image>
           <div className={styles.titles}>
-            <h1 className={`${styles.h1}`}>Országos terménykereskedelem</h1>
+            <h1 className={`${styles.h1}`}>{language.products.cart}</h1>
             <p className={`${styles.p}`}>
               100%-ban magyar, családi vállalkozás többgenerációs termelői
               tapasztalattal

@@ -6,7 +6,7 @@
     "btn1": "RUGALMAS SZÁLLÍTÁS",
     "btn2": "GYORS FIZETÉS",
     "links": [
-      { "name": "Főoldal", "link": "/" },
+      { "name": "Főoldal", "link": "/hu" },
       { "name": "Terménykereskedelem", "link": "/#termekkereskedelem" },
       { "name": "Inputanyag", "link": "#" },
       { "name": "Területi képviselők", "link": "#" },
@@ -15,7 +15,7 @@
       { "name": "Nemes ügyeink", "link": "#" }
     ],
     "language": [
-      { "name": "HU", "link": "/" },
+      { "name": "HU", "link": "/hu" },
       { "name": "EN", "link": "/en" },
       { "name": "SRB", "link": "/srb" }
     ]

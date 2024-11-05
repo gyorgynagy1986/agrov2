@@ -13,23 +13,7 @@ import hambi from '../../public/assets/hambi.svg';
 import facebook from '../../public/assets/facebook_white.svg'
 
 const asap = Asap({ subsets: ["latin"] });
-const lexend = Lexend_Deca({ subsets: ["latin"] });
 
-const links = [
-  { name: "Főoldal", link: "/" },
-  { name: "Terménykereskedelem", link: "/#termekkereskedelem" },
-  { name: "Inputanyag", link: "#" },
-  { name: "Területi képviselők", link: "#" },
-  { name: "Rólunk", link: "#" },
-  { name: "Elérhetőség", link: "#" },
-  { name: "Nemes ügyeink", link: "#" },
-];
-
-const language = [
-  { name: "HU", link: "/" },
-  { name: "EN", link: "/en" },
-  { name: "SRB", link: "/srb" },
-];
 
 const Nav = ({sticky, navContent}) => {
   const path = usePathname();

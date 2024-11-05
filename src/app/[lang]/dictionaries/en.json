@@ -6,7 +6,7 @@
     "btn1": "FLEXIBLE DELIVERY",
     "btn2": "FAST PAYMENT",
     "links": [
-      { "name": "Home", "link": "/" },
+      { "name": "Home", "link": "/en" },
       { "name": "Crop Trading", "link": "/#termekkereskedelem" },
       { "name": "Input Materials", "link": "#" },
       { "name": "Regional Representatives", "link": "#" },

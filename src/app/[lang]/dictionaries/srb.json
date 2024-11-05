@@ -6,7 +6,7 @@
     "btn1": "FLEKSIBILNA DOSTAVA",
     "btn2": "BRZA ISPLATA",
     "links": [
-      { "name": "Početna", "link": "/" },
+      { "name": "Početna", "link": "/srb" },
       { "name": "Trgovina Usevima", "link": "/#termekkereskedelem" },
       { "name": "Ulazni Materijali", "link": "#" },
       { "name": "Regionalni Predstavnici", "link": "#" },

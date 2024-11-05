@@ -1,30 +1,13 @@
-// src/app/[lang]/layout.js
+// src/app/layout.js
 import React from "react";
-import localFont from 'next/font/local';
-import "../globals.css";
-import "../responsive.css";
+import './globals.css'
 import Nav from "@/layouts/Nav";
 import Footer from "@/layouts/Footer";
 
-// Load custom fonts
-const asap = localFont({
-  src: './../fonts/Asap-Regular.ttf',
-  variable: "--asap",
-  display: 'swap',
-  weight: "400",
-});
-
-const exo = localFont({
-  src: './../fonts/Exo2-Regular.ttf',
-  variable: "--exo",
-  display: 'swap',
-});
-
-export default function LangLayout({ children, params }) {
-  const lang = params.lang || 'hu'; // Default to Hungarian if no lang param is present
+export default function RootLayout({ children }) {
   return (
-    <html lang={lang}>
-      <body className={`${asap.variable} ${exo.variable}`}>
+    <html lang="hu">
+      <body>
         <Nav />
         {children}
         <Footer />

@@ -58,7 +58,7 @@ const Nav = ({sticky}) => {
     <nav className={`${styles.container} ${sticky && styles.sticky}`}>
       <div className={styles.innerContainer}>
         <div className={styles.imageContainer}>
-          <Image className={styles.logo} src={logo} alt='Országos terménykereskedelem'/>
+          <Image priority className={styles.logo} src={logo} alt='Országos terménykereskedelem'/>
         </div>
         <div className={styles.navMenu}>
           <ul className={`${styles.navMenuLarge} ${asap.className} `}>
@@ -76,6 +76,7 @@ const Nav = ({sticky}) => {
             className={styles.hambi}
             alt='Országos terménykereskedelem'
             src={hambi}
+            priority
             onClick={toggleMenu}
           />
           <ul className={`${styles.languageMenu} ${asap.className}`}>

@@ -31,7 +31,7 @@ const Hero = () => {
 
   return (
     <div ref={menuRef} className={styles.heroContainer}>
-      {stickyNav && <StickyNav sticky={true} />}
+     
       <div className={styles.textContainer}>
         <div className={styles.textContainerHelper}>
           <Image src={Logo}></Image>

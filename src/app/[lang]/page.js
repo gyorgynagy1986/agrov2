@@ -1,16 +1,14 @@
 import React from "react";
-import Hero from "@/layouts/Hero";
-import Termeny from "@/layouts/Termeny";
-import InputAnyag from "@/layouts/InputAnyag";
-import Map from "@/layouts/Map";
+import Hero from "@/layouts/hero/Hero";
+import Termeny from "@/layouts/termeny/Termeny";
+import InputAnyag from "@/layouts/inpoutProducts/InputAnyag";
+import Map from "@/layouts/map/Map";
 import { getDictionary } from "@/app/[lang]/dictionaries";
 
 export default async function Home({ params }) {
   const { lang = 'hu' } = params; // Default to 'hu' if no language parameter is provided
   const dict = await getDictionary(lang);
   
-  console.log(dict); // Check the loaded dictionary
-
   return (
     <>
       <Hero language={dict.content} />

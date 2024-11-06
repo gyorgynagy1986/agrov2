@@ -7,10 +7,10 @@
   "btn2": "QUICK PAYMENT",
   "links": [
     { "name": "Home", "link": "/en" },
-    { "name": "Crop Trade", "link": "/#crop-trade" },
-    { "name": "Input Materials", "link": "#" },
+    { "name": "Crop Trade", "link": "/" },
+    { "name": "Input Materials", "link": "/" },
     { "name": "Regional Representatives", "link": "#" },
-    { "name": "About Us", "link": "#" },
+    { "name": "About Us", "link": "/en/about" },
     { "name": "Contact", "link": "#" },
     { "name": "Our Noble Causes", "link": "#" }
   ],
@@ -46,5 +46,9 @@
     "Peas", "Brewing Barley", "Popcorn", "Striped Sunflower", "Cumin", "Finch Seed", "Millet", "Flaxseed", "Poppy", "Red Corn"
   ],
   "productTitle3": "Organic Crops",
-  "footerText": "At MirAgro Ltd., we welcome our clients with a wide range of products, flexible approach, personalized payment terms, and dedicated logistical support!"
+  "footerText": "At MirAgro Ltd., we welcome our clients with a wide range of products, flexible approach, personalized payment terms, and dedicated logistical support!",
+  "footer":"Minden jog fenntartva © 2024 - MirAgro Kft.",
+  "footer2":"Designed & developed by",
+  "footer3":"StudioBromo",
+   "rolunk":"About"
 }}

@@ -10,7 +10,7 @@
       { "name": "Terménykereskedelem", "link": "/#termekkereskedelem" },
       { "name": "Inputanyag", "link": "#" },
       { "name": "Területi képviselők", "link": "#" },
-      { "name": "Rólunk", "link": "#" },
+      { "name": "Rólunk", "link": "hu/rolunk" },
       { "name": "Elérhetőség", "link": "#" },
       { "name": "Nemes ügyeink", "link": "#" }
     ],
@@ -45,6 +45,10 @@
       "Borsó", "Sörárpa", "Popcorn", "Csíkos napraforgó", "Kömény", "Fénymag", "Köles", "Lenmag", "Mák", "Piros kukorica"
     ],
     "productTitle3": "BIO termények",
-    "footerText": "A MirAgro Kft.-nél széles termékpalettával, rugalmas hozzáállással, egyénre szabott fizetési feltételekkel és kiemelt logisztikai támogatással várjuk ügyfeleinket!"
+    "footerText": "A MirAgro Kft.-nél széles termékpalettával, rugalmas hozzáállással, egyénre szabott fizetési feltételekkel és kiemelt logisztikai támogatással várjuk ügyfeleinket!",
+    "footer":"Minden jog fenntartva © 2024 - MirAgro Kft.",
+    "footer2":"Designed & developed by",
+    "footer3":"StudioBromo",
+    "rolunk":"Rólunk"
   }
 }

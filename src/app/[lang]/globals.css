@@ -37,6 +37,14 @@
     url("./fonts/Exo2-SemiBold.woff") format("woff");
 }
 
+@font-face {
+  font-family: "exo";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("Exo2-Bold"),
+    url("./fonts/Exo2-Bold.woff") format("woff");
+}
 
 * {
   box-sizing: border-box;
@@ -338,5 +346,37 @@ li {
   --font-size-h3:15px;
   --font-size-name: 17px;
   --line-height-pTitle:21px;
+  }
+}
+
+/*RÓLUNK*/
+
+:root {
+  --font-family-asap: "asap";
+  --font-family-exo: "exo";
+  --font-size-h1: 21px;
+  --font-size-h2: 18px;
+  --line-height-h1: 24.07px;
+  --line-height-h2: 25.2px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+  --font-weight-extra-bold: 700;
+  --gap-large: 30px;
+  --gap-text: 20px;
+  --gap-small: 10px;
+  --padding: 60px 5vw 90px 5vw;
+  --background-gradient: linear-gradient(180deg, #FFF9EA 30%, #E7DDC5 88%);
+}
+
+@media (min-width: 1920px) {
+  :root {
+      --font-size-h1: 25.2px; /* 21px * 1.2 */
+      --font-size-h2: 21.6px; /* 18px * 1.2 */
+      --line-height-h1: 28.88px; /* 24.07px * 1.2 */
+      --line-height-h2: 30.24px; /* 25.2px * 1.2 */
+      --gap-large: 36px; /* 30px * 1.2 */
+      --gap-small: 12px; /* 10px * 1.2 */
+      --padding: 72px 108px 108px 108px; /* 60px, 90px * 1.2 */
+      --gap-text: 35px;
   }
 }

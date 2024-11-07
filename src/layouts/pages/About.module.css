@@ -17,9 +17,27 @@
 .ulLiContainer li,
 .footerText {
     font-family: var(--font-family-exo);
-    font-size: var(--font-size-h2);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-h2);
+}
+
+.hederTex {
+    font-size: var(--font-size-heder-text);
+}
+
+.h2 {
+    font-size: var(--font-size-h2);
+
+}
+
+.ulLiContainer li {
+    font-size: var(--font-size-li-about);
+
+}
+
+.footerText {
+    font-size: var(--font-size-footer-text);
+
 }
 
 .ulLiContainer li {
@@ -67,12 +85,24 @@
     height: 100%;
 }
 
+@media screen and (max-width:1024px) {
+    .section {
+        flex-direction: column-reverse;
+    } 
+}
+
 .textContainer {
     width: 50%;
     padding: var(--padding);
     background: var(--background-gradient);
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width:1024px) {
+    .textContainer {
+        width: 100%;
+    } 
 }
 
 .textContainerHelper {
@@ -91,6 +121,19 @@
     width: 50%;
     position: relative;
     height: auto;
+}
+
+@media screen and (max-width:1024px) {
+    .ImageContainer {
+        width: 100%;
+        height: 600px;
+    } 
+}
+
+@media screen and (max-width:600px) {
+    .ImageContainer {
+        height: 320px;
+    } 
 }
 
 .ImageContainer img {
@@ -114,10 +157,29 @@
     display: flex;
 }
 
+@media screen and (max-width:1024px) {
+    .section2 {
+        flex-direction: column;
+    } 
+}
+
 .imageContainer2 {
     width: 50%;
     position: relative;
     height: auto;
+}
+
+@media screen and (max-width:1024px) {
+    .imageContainer2 {
+        width: 100%;
+        height: 600px;
+    } 
+}
+
+@media screen and (max-width:600px) {
+    .imageContainer2 {
+        height: 320px;
+    } 
 }
 
 .imageContainer2 img {
@@ -130,20 +192,6 @@
     object-position: center;
 }
 
-.ReviewContainer {
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(180deg, #FFF9EA 30%, #E7DDC5 88%);
-    padding-top: 60px;
-    padding-bottom: 90px;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .navigatorContainer {
     display: flex;

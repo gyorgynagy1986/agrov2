@@ -1,4 +1,4 @@
-import styles from './page.module.css';
+import styles from './About.module.css';
 import photo from '../../../public/assets/pages/1.png';
 import photo2 from '../../../public/assets/pages/2.png';
 import Image from "next/image";

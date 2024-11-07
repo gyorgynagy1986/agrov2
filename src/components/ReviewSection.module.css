@@ -17,9 +17,27 @@
 .ulLiContainer li,
 .footerText {
     font-family: var(--font-family-exo);
-    font-size: var(--font-size-h2);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-h2);
+}
+
+.hederTex {
+    font-size: var(--font-size-heder-text);
+}
+
+.h2 {
+    font-size: var(--font-size-h2);
+
+}
+
+.ulLiContainer li {
+    font-size: var(--font-size-li-about);
+
+}
+
+.footerText {
+    font-size: var(--font-size-footer-text);
+
 }
 
 .ulLiContainer li {
@@ -61,74 +79,6 @@
     box-shadow: 0px 4px 50px 0px #6A583C0D;
 
 }
-.section {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-.textContainer {
-    width: 50%;
-    padding: var(--padding);
-    background: var(--background-gradient);
-    display: flex;
-    justify-content: center;
-}
-
-.textContainerHelper {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap-text);
-    max-width: 600px;
-}
-
-.ulLiContainer ul  {
-   padding-left:20px ;
-
-}
-
-.ImageContainer {
-    width: 50%;
-    position: relative;
-    height: auto;
-}
-
-.ImageContainer img {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    object-fit: cover;
-    object-position: center;
-}
-
-.ulLiContainer {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap-small);
-}
-
-
-.section2 {
-    display: flex;
-}
-
-.imageContainer2 {
-    width: 50%;
-    position: relative;
-    height: auto;
-}
-
-.imageContainer2 img {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    object-fit: cover;
-    object-position: center;
-}
 
 .ReviewContainer {
     width: 50%;
@@ -142,7 +92,20 @@
     justify-content: center;
     align-items: center;
     min-height: 500px;
+}
 
+@media screen and (max-width:1024px) {
+  .ReviewContainer {
+      width: 100%;
+  } 
+}
+
+@media screen and (max-width:764px) {
+  .ReviewContainer {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    min-height:auto;
+  } 
 }
 
 .ReviewContainerHelper {
@@ -154,6 +117,8 @@
     max-width: 600px;
 
 }
+
+
 
 .navigatorContainer {
     display: flex;
@@ -186,6 +151,12 @@
     text-align: center !important;
     gap: 30px;
     margin-bottom: 40px;
+}
+
+@media screen and (max-width:764px) {
+  .ReviewContainerText {
+    margin-bottom: 30px;
+  }
 }
 
 .h1Container {

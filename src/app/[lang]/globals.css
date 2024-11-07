@@ -356,6 +356,9 @@ li {
   --font-family-exo: "exo";
   --font-size-h1: 21px;
   --font-size-h2: 18px;
+  --font-size-li-about:18px;
+  --font-size-heder-text:18px;
+  --font-size-footer-text:18px;
   --line-height-h1: 24.07px;
   --line-height-h2: 25.2px;
   --font-weight-regular: 400;
@@ -368,15 +371,31 @@ li {
   --background-gradient: linear-gradient(180deg, #FFF9EA 30%, #E7DDC5 88%);
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1921px) {
   :root {
       --font-size-h1: 25.2px; /* 21px * 1.2 */
       --font-size-h2: 21.6px; /* 18px * 1.2 */
+      --font-size-li-about:21.6px;
+      --font-size-heder-text:21.6px;
+      --font-size-footer-text:21.6px;
       --line-height-h1: 28.88px; /* 24.07px * 1.2 */
       --line-height-h2: 30.24px; /* 25.2px * 1.2 */
       --gap-large: 36px; /* 30px * 1.2 */
       --gap-small: 12px; /* 10px * 1.2 */
       --padding: 72px 108px 108px 108px; /* 60px, 90px * 1.2 */
       --gap-text: 35px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  :root {
+    --padding: 30px 5vw 30px 5vw;
+    --font-size-heder-text:15px;
+    --gap-large: 20px;
+    --font-size-h2:17px;
+    --font-size-li-about:15px;
+    --font-size-footer-text:15px;
+
   }
 }

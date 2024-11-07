@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import styles from './page.module.css';
+import styles from './ReviewSection.module.css';
 import right from '../../public/assets/pages/arrow-right.svg';
 import left from '../../public/assets/pages/arrow-left.svg';
 import Image from "next/image";
@@ -38,9 +38,14 @@ const ReviewSection = () => {
 
   const autoSlide = useRef(null);
   const size = useWindowSize();
-  const interval = 3000;
+  const interval = 2500;
   const autoPlayDesktop = true;
-  const autoPlayMobile = true;
+  const autoPlayMobile = false;
+
+
+  useEffect(() => {
+    console.log(currentReview, 'currentReview');
+  }, [currentReview]);
 
   useEffect(() => {
     startAutoSlide();
@@ -48,6 +53,7 @@ const ReviewSection = () => {
   }, [size.width, autoPlayDesktop, autoPlayMobile]);
 
   const startAutoSlide = () => {
+    clearInterval(autoSlide.current); // Töröljük az előző intervallumot
     const shouldAutoPlay = size.width > 768 ? autoPlayDesktop : autoPlayMobile;
     if (shouldAutoPlay) {
       autoSlide.current = setInterval(() => {

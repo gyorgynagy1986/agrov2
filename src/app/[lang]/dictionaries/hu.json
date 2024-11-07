@@ -11,7 +11,7 @@
       { "name": "Terménykereskedelem", "link": "/#termekkereskedelem" },
       { "name": "Inputanyag", "link": "#" },
       { "name": "Területi képviselők", "link": "#" },
-      { "name": "Rólunk", "link": "hu/rolunk" },
+      { "name": "Rólunk", "link": "/hu/rolunk" },
       { "name": "Elérhetőség", "link": "#" },
       { "name": "Nemes ügyeink", "link": "#" }
     ],

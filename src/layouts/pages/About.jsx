@@ -1,6 +1,6 @@
 import styles from './About.module.css';
-import photo from '../../../public/assets/pages/1.png';
-import photo2 from '../../../public/assets/pages/2.png';
+import photo from '../../../public/assets/pages/1.webp';
+import photo2 from '../../../public/assets/pages/2.webp';
 import Image from "next/image";
 import ReviewSection from "@/components/ReviewSection"; // Importing the client-side review section
 
@@ -36,7 +36,7 @@ const About = ({dict}) => {
           </div>
         </div>
         <div className={styles.ImageContainer}>
-          <Image alt="" src={photo}></Image>
+          <Image priority alt="" src={photo}></Image>
         </div>
       </section>
 

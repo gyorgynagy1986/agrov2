@@ -1,7 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from 'react';
-
 import Image from "next/image";
 import { Asap } from "next/font/google";
 import logo from "../../../public/assets/logo_white.svg";
@@ -12,13 +11,9 @@ import facebook from '../../../public/assets/facebook_white.svg'
 
 const asap = Asap({ subsets: ["latin"] });
 
-
 const Nav = ({sticky, navContent}) => {
   const path = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-
-  console.log(path, 'path')
 
   useEffect(() => {
     // Disable scrolling when the menu is open
@@ -43,7 +38,7 @@ const Nav = ({sticky, navContent}) => {
     <nav className={`${styles.container} ${sticky && styles.sticky}`}>
       <div className={styles.innerContainer}>
         <div className={styles.imageContainer}>
-          <Image className={styles.logo} src={logo} alt='Országos terménykereskedelem'/>
+        <Link href={navContent.navigation}> <Image priority className={styles.logo} src={logo} alt='Országos terménykereskedelem'/> </Link>
         </div>
         <div className={styles.navMenu}>
           <ul className={`${styles.navMenuLarge} ${asap.className} `}>
@@ -62,6 +57,7 @@ const Nav = ({sticky, navContent}) => {
             alt='Országos terménykereskedelem'
             src={hambi}
             onClick={toggleMenu}
+            priority
           />
           <ul className={`${styles.languageMenu} ${asap.className}`}>
             {navContent.language.map((link, index) => (
@@ -75,15 +71,16 @@ const Nav = ({sticky, navContent}) => {
         </div>
       </div>
 
-      {/* Full-screen mobile menu overlay */}
       {isMenuOpen && (
         <div className={styles.mobileMenu}>
           <div className={styles.mobileMenuHeader}>
+            <Link href={navContent.navigation} onClick={closeMenu}>
             <Image
               className={styles.mobileMenuLogo}
               src={logo}
               alt='Országos terménykereskedelem'
             />
+            </Link>
             <Image
               className={styles.mobileMenuCloseIcon}
               src={hambi}
@@ -103,7 +100,6 @@ const Nav = ({sticky, navContent}) => {
           </ul>
           <Image className={styles.facebook} alt='Országos terménykereskedelem' src={facebook}></Image>
           </div>
-          {/* Language menu within mobile menu */}
           <ul className={`${styles.mobileLanguageMenu}`}>
             {navContent.language.map((link, index) => (
               <li key={index} onClick={closeMenu}>

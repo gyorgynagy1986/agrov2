@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Buza from "../../../public/assets/input.png";
+import Buza from "../../../public/assets/input.webp";
 import Aniko from "../../../public/assets/aniko.png";
 import styles from "./InputAnyag.module.css";
 

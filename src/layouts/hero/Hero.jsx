@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import HeroPhoto from "../../../public/assets/hero2.png";
+import HeroPhoto from "../../../public/assets/hero2.webp";
 import Logo from "../../../public/assets/logo.png";
 import styles from "./Hero.module.css";
 import Sticky from "@/layouts/navigation/Nav";

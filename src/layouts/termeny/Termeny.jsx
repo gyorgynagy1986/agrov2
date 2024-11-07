@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Buza from "../../../public/assets/buza.png";
+import Buza from "../../../public/assets/buza.webp";
 import BioLogo from "../../../public/assets/bioLogo.png";
 import styles from "./Termeny.module.css";
 

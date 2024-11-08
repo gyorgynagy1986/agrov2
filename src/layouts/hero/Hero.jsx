@@ -19,7 +19,7 @@ const Hero = ({ language }) => {
           setStickyNav(true);
         }
       },
-      { rootMargin: "0px 20px 20px 20px" }
+      { rootMargin: "0px 20px 20px 20px" },
     );
 
     const observeMenu = () => {

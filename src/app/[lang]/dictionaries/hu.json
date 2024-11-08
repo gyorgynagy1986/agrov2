@@ -10,9 +10,9 @@
       { "name": "Főoldal", "link": "/hu" },
       { "name": "Terménykereskedelem", "link": "/#termekkereskedelem" },
       { "name": "Inputanyag", "link": "#" },
-      { "name": "Területi képviselők", "link": "#" },
+      { "name": "Területi képviselők", "link": "/hu/#teruleti-kepviselok" },
       { "name": "Rólunk", "link": "/hu/rolunk" },
-      { "name": "Elérhetőség", "link": "#" },
+      { "name": "Elérhetőség", "link": "/hu/elerhetoseg" },
       { "name": "Nemes ügyeink", "link": "#" }
     ],
     "language": [
@@ -39,17 +39,41 @@
     "subtitle": "Bio és konvencionális termények",
     "productTitle1": "Szokvány termények",
     "productList1": [
-      "Búza", "Árpa", "Kukorica", "Napraforgó", "Zab", "Szója", "Triticalé", "Repce", "Rozs", "Durum", "Tönköly"
+      "Búza",
+      "Árpa",
+      "Kukorica",
+      "Napraforgó",
+      "Zab",
+      "Szója",
+      "Triticalé",
+      "Repce",
+      "Rozs",
+      "Durum",
+      "Tönköly"
     ],
     "productTitle2": "Speciális termények",
     "productList2": [
-      "Borsó", "Sörárpa", "Popcorn", "Csíkos napraforgó", "Kömény", "Fénymag", "Köles", "Lenmag", "Mák", "Piros kukorica"
+      "Borsó",
+      "Sörárpa",
+      "Popcorn",
+      "Csíkos napraforgó",
+      "Kömény",
+      "Fénymag",
+      "Köles",
+      "Lenmag",
+      "Mák",
+      "Piros kukorica"
     ],
     "productTitle3": "BIO termények",
     "footerText": "A MirAgro Kft.-nél széles termékpalettával, rugalmas hozzáállással, egyénre szabott fizetési feltételekkel és kiemelt logisztikai támogatással várjuk ügyfeleinket!",
-    "footer":"Minden jog fenntartva © 2024 - MirAgro Kft.",
-    "footer2":"Designed & developed by",
-    "footer3":"StudioBromo",
-    "rolunk":"Rólunk"
+    "footer": "Minden jog fenntartva © 2024 - MirAgro Kft.",
+    "footer2": "Designed & developed by",
+    "footer3": "StudioBromo",
+    "rolunk": "Rólunk",
+    "termenyertesites": "Terményértékesítés",
+    "terulateiKepviselo": "területi képviselő",
+    "kulkerUzletkoto": "külkereskedelmi üzletkötő",
+    "logKordinator" : "logisztikai koordinátor",
+    "markLogKor": "marketing és logisztikai koordinátor"
   }
 }

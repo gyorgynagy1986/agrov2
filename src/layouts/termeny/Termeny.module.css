@@ -133,7 +133,6 @@
   font-weight: bold;
 }
 
-
 @media screen and (max-width: 600px) {
   .index {
     margin-bottom: 10px;
@@ -151,19 +150,17 @@
 
 @media screen and (max-width: 1249px) {
   .list {
-    grid-template-columns:  repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(3, auto);
     column-gap: 4rem;
   }
 }
 
-
 @media screen and (max-width: 1024px) {
   .list {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-template-rows: repeat(4, auto);
-  column-gap: 0rem;
-
+    grid-template-rows: repeat(4, auto);
+    column-gap: 0rem;
   }
 }
 
@@ -174,7 +171,6 @@
   }
 }
 
-
 .listItem span {
   color: #004e1b;
   margin-right: 7.5px;
@@ -183,8 +179,8 @@
 .footerText {
   margin-bottom: var(--margin-bottom-footer);
   font-family: exo;
-  font-size:var(--font-footer-text);
-} 
+  font-size: var(--font-footer-text);
+}
 
 .bioLogo {
   margin-bottom: var(--margin-bottom-bio-logo);

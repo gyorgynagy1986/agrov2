@@ -1,10 +1,8 @@
-
-
 :root {
   /* HERO Units */
   --font-size-h1: 28px;
   --line-height-h1: 32.09px;
-  --font-size-nav:18px;
+  --font-size-nav: 18px;
   --font-size-p: 21px;
   --line-height-p: 25.2px;
 
@@ -70,7 +68,7 @@
 
   --font-size-productList: 17px;
   --line-height-productList: 20.4px;
-  --font-footer-text:18px;
+  --font-footer-text: 18px;
   --padding-left-right-section: 5vw;
   --padding-bottom-section: 90px;
   --padding-top-section: 60px;
@@ -130,8 +128,6 @@
   --style-container-size: 30px;
 }
 
-
-
 /* Increase by 20% at max-width: 1921px */
 @media screen and (min-width: 1921px) {
   :root {
@@ -161,49 +157,49 @@
     --tooltip-padding: 6px; /* 5px + 20% */
 
     --style-container-size: 36px; /* 30px + 20% */
-    
+
     --font-size-h1: 33.6px; /* 28px + 20% */
     --line-height-h1: 38.51px; /* 32.09px + 20% */
     --font-size-nav: 19px;
     --font-size-p: 25.2px; /* 21px + 20% */
     --line-height-p: 30.24px; /* 25.2px + 20% */
-  
+
     --font-size-span: 20.4px; /* 17px + 20% */
     --line-height-span: 23.38px; /* 19.48px + 20% */
-  
+
     --padding-top-text-container: 72px; /* 60px + 20% */
     --padding-bottom-text-container: 108px; /* 90px + 20% */
     --gap-text-container-helper: 60px; /* 50px + 20% */
-  
+
     --fakeBtnContainerItems: 12px; /* 10px + 20% */
-  
+
     --max-width-titles: 552px; /* 460px + 20% */
     --gap-titles: 12px; /* 10px + 20% */
     --padding-left-content: 108px; /* 90px + 20% */
     --padding-right-content: 108px;
     --padding-top-content: 72px;
     --padding-bottom-content: 108px;
-  
+
     --list-item-font-size: 20.4px; /* 17px + 20% */
-  
+
     --gap-title-container: 12px; /* 10px + 20% */
-  
+
     --font-size-index: 1.5rem; /* 1.25rem + 20% */
     --font-size-title: 1.5rem;
-    --font-size-subtitle:21.6px; /* 1rem + 20% */
+    --font-size-subtitle: 21.6px; /* 1rem + 20% */
     --margin-bottom-subtitle: 3rem; /* 2.5rem + 20% */
-  
+
     --font-size-list-title: 1.35rem; /* 1.125rem + 20% */
     --margin-bottom-list-title: 0.6rem; /* 0.5rem + 20% */
-  
+
     --gap-list: 0.6rem; /* 0.5rem + 20% */
     --margin-bottom-list: 1.2rem; /* 1rem + 20% */
-  
+
     --margin-bottom-footer: 3rem; /* 2.5rem + 20% */
     --margin-bottom-bio-logo: 12px; /* 10px + 20% */
     --font-size-h2: 28.8px; /* 24px + 20% */
     --line-height-h2: 33px;
-    --font-footer-text:21.6px;
+    --font-footer-text: 21.6px;
 
     --font-size-inputP: 21.6px; /* 18px + 20% */
     --line-height-inputP: 30.24px;
@@ -239,48 +235,46 @@
   }
 }
 
-
-
 @media screen and (max-width: 1200px) {
   :root {
-    --font-size-nav:17px;
+    --font-size-nav: 17px;
   }
 }
 
 @media screen and (max-width: 1135px) {
   :root {
-    --font-size-nav:16px;
+    --font-size-nav: 16px;
   }
 }
 
 @media screen and (max-width: 767px) {
   :root {
-  --font-size-h2:21px;
-  --font-size-subtitle:16px;
-  --font-size-productTitle:17px;
-  --margin-bottom-subtitle:20px;
-  --padding-top-content:30px;
-  --margin-bottom-list:20px;
-  --footer-container-gap:15px;
-  --padding-bottom-content:30px;
-  --font-footer-text:15px;
-  --font-size-inputP:16px;
-  --gap-containerHelper: 30px;
-  --gap-sectionText: 15px;
-  --font-size-contactName:17px;
-  --font-size-contactLink:15px;
-  --gap-productContainer:30px;
-  --font-size-productList:15px;
-  --line-height-productList:18px;
-  --gap-productContainer:20px;
-  --padding-container-top:30px;
-  --gap-text-container-helper: 30px;
-  --padding-top-text-container: 40px;
-  --padding-bottom-text-container: 40px;
-  --font-size-h1: 23px;
-  --font-size-p: 18px;
-  --font-size-h3:15px;
-  --font-size-name: 17px;
-  --line-height-pTitle:21px;
+    --font-size-h2: 21px;
+    --font-size-subtitle: 16px;
+    --font-size-productTitle: 17px;
+    --margin-bottom-subtitle: 20px;
+    --padding-top-content: 30px;
+    --margin-bottom-list: 20px;
+    --footer-container-gap: 15px;
+    --padding-bottom-content: 30px;
+    --font-footer-text: 15px;
+    --font-size-inputP: 16px;
+    --gap-containerHelper: 30px;
+    --gap-sectionText: 15px;
+    --font-size-contactName: 17px;
+    --font-size-contactLink: 15px;
+    --gap-productContainer: 30px;
+    --font-size-productList: 15px;
+    --line-height-productList: 18px;
+    --gap-productContainer: 20px;
+    --padding-container-top: 30px;
+    --gap-text-container-helper: 30px;
+    --padding-top-text-container: 40px;
+    --padding-bottom-text-container: 40px;
+    --font-size-h1: 23px;
+    --font-size-p: 18px;
+    --font-size-h3: 15px;
+    --font-size-name: 17px;
+    --line-height-pTitle: 21px;
   }
 }

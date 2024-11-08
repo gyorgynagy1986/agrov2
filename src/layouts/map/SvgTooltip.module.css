@@ -94,8 +94,7 @@
   gap: var(--gap-textContainer);
 }
 
-
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .textContainer {
     margin-bottom: 30px;
   }
@@ -110,12 +109,11 @@
   margin-inline: auto;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .imageContainer {
-   display: none;
+    display: none;
   }
 }
-
 
 .imageContainer svg {
   max-width: 1280px;
@@ -130,14 +128,13 @@
   height: 100%;
 }
 
-@media screen and (min-width:601px) {
+@media screen and (min-width: 601px) {
   .mobileMapContainer {
     display: none;
   }
 
   .mobileMapContainer img {
     display: none;
-
   }
 }
 
@@ -146,7 +143,7 @@
   gap: var(--gap-containerMain);
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
   .containerMainForKepviselok {
     flex-direction: column;
   }

@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import styles from './ReviewSection.module.css';
-import right from '../../public/assets/pages/arrow-right.svg';
-import left from '../../public/assets/pages/arrow-left.svg';
+import styles from "./ReviewSection.module.css";
+import right from "../../public/assets/pages/arrow-right.svg";
+import left from "../../public/assets/pages/arrow-left.svg";
 import Image from "next/image";
 import useSwipe from "@/utils/useSwipe";
 import useWindowSize from "@/utils/useWindowSize";
@@ -33,7 +33,8 @@ const ReviewSection = () => {
 
   const { handleTouchStart, handleTouchEnd } = useSwipe(
     () => setCurrentReview((prev) => (prev + 1) % reviews.length),
-    () => setCurrentReview((prev) => (prev - 1 + reviews.length) % reviews.length)
+    () =>
+      setCurrentReview((prev) => (prev - 1 + reviews.length) % reviews.length),
   );
 
   const autoSlide = useRef(null);
@@ -42,9 +43,8 @@ const ReviewSection = () => {
   const autoPlayDesktop = true;
   const autoPlayMobile = false;
 
-
   useEffect(() => {
-    console.log(currentReview, 'currentReview');
+    console.log(currentReview, "currentReview");
   }, [currentReview]);
 
   useEffect(() => {
@@ -94,12 +94,11 @@ const ReviewSection = () => {
       onMouseLeave={startAutoSlide}
     >
       <div className={styles.ReviewContainerHelper}>
-
         <div className={styles.h1Container}>
           <h3 className={styles.h1}>Vélemények</h3>
           <div className={styles.line}></div>
-        </div> 
-       
+        </div>
+
         <div className={styles.ReviewContainerText}>
           <p className={styles.hederTex}>
             {reviews[currentReview].text.length > 200
@@ -119,17 +118,13 @@ const ReviewSection = () => {
 
         {/* Navigation Buttons */}
         <div className={styles.navigatorContainer}>
-          <div 
-            onClick={handlePrev} 
+          <div
+            onClick={handlePrev}
             className={`${styles.imageCircle} ${pulseEffect ? styles.pulse : ""}`}
           >
-            <Image
-              className={styles.imgArrow}
-              src={left}
-              alt="Previous"
-            />
+            <Image className={styles.imgArrow} src={left} alt="Previous" />
           </div>
-      
+
           {/* Pagination Indicators */}
           <div className={styles.paginationControls}>
             {reviews.map((_, index) => (
@@ -140,26 +135,30 @@ const ReviewSection = () => {
               ></div>
             ))}
           </div>
-          
-          <div 
-            onClick={handleNext} 
+
+          <div
+            onClick={handleNext}
             className={`${styles.imageCircle} ${pulseEffect ? styles.pulse : ""}`}
           >
-            <Image
-              className={styles.imgArrow}
-              src={right}
-              alt="Next"
-            />
+            <Image className={styles.imgArrow} src={right} alt="Next" />
           </div>
         </div>
       </div>
 
       {/* Modal for Full Review */}
       {modalOpen && (
-        <div className={styles.modalOverlay} onClick={() => setModalOpen(false)}>
-          <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+        <div
+          className={styles.modalOverlay}
+          onClick={() => setModalOpen(false)}
+        >
+          <div
+            className={styles.modalContent}
+            onClick={(e) => e.stopPropagation()}
+          >
             <p>{reviews[currentReview].text}</p>
-            <button className={styles.btn} onClick={() => setModalOpen(false)}>Bezár</button>
+            <button className={styles.btn} onClick={() => setModalOpen(false)}>
+              Bezár
+            </button>
           </div>
         </div>
       )}

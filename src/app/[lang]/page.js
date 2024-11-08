@@ -6,9 +6,9 @@ import Map from "@/layouts/map/Map";
 import { getDictionary } from "@/app/[lang]/dictionaries";
 
 export default async function Home({ params }) {
-  const { lang = 'hu' } = params; // Default to 'hu' if no language parameter is provided
+  const { lang = "hu" } = params; // Default to 'hu' if no language parameter is provided
   const dict = await getDictionary(lang);
-  
+
   return (
     <>
       <Hero language={dict.content} />

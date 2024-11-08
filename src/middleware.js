@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
-import { match } from '@formatjs/intl-localematcher';
-import Negotiator from 'negotiator';
+import { match } from "@formatjs/intl-localematcher";
+import Negotiator from "negotiator";
 
-const locales = ['en', 'srb', 'hu']; // Supported locales
-const defaultLocale = 'hu'; // Default language for root domain
+const locales = ["en", "srb", "hu"]; // Supported locales
+const defaultLocale = "hu"; // Default language for root domain
 
 function getLocale(request) {
   const negotiator = new Negotiator({ headers: request.headers });
@@ -17,13 +17,13 @@ export function middleware(request) {
   const { pathname } = request.nextUrl;
 
   // Redirect root path '/' to default locale if no prefix is provided
-  if (pathname === '/') {
+  if (pathname === "/") {
     request.nextUrl.pathname = `/${defaultLocale}`;
     return NextResponse.redirect(request.nextUrl);
   }
 
   const hasLocalePrefix = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
   );
 
   // Redirect if no locale is in the pathname
@@ -35,5 +35,5 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ['/((?!api|_next|static|favicon.ico).*)'],
+  matcher: ["/((?!api|_next|static|favicon.ico).*)"],
 };

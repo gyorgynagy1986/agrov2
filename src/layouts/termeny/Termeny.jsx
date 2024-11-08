@@ -61,9 +61,7 @@ const Termeny = ({ language }) => {
             <h3 className={styles.productTitle}>{language.productTitle3}</h3>
 
             {/* Footer section */}
-            <p className={styles.footerText}>
-              {language.footerText}
-            </p>
+            <p className={styles.footerText}>{language.footerText}</p>
           </div>
 
           {/* Bio Garancia logo */}

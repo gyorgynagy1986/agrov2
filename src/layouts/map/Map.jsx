@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "./SvgTooltip.module.css";
-import mobilemap from '../../../public/assets/map_mobile.svg'
+import mobilemap from "../../../public/assets/map_mobile.svg";
 import Image from "next/image";
 
 const Map = () => {
@@ -31,7 +31,7 @@ const Map = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div id="teruleti-kepviselok" className={styles.container}>
       <div className={styles.textContainer}>
         <h3 className={styles.h3}>Területi képviselők</h3>
 
@@ -76,9 +76,9 @@ const Map = () => {
         </div>
       </div>
 
-        <div className={styles.mobileMapContainer}>
-          <Image src={mobilemap}></Image>
-        </div>
+      <div className={styles.mobileMapContainer}>
+        <Image src={mobilemap}></Image>
+      </div>
 
       <div className={styles.imageContainer}>
         <svg

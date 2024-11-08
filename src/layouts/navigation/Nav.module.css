@@ -13,13 +13,14 @@
   top: 0;
   position: fixed;
   z-index: 99999;
-  animation: slide-in-bck-center .4s;
-  -webkit-animation: slide-in-bck-center .4s;
+  animation: slide-in-bck-center 0.4s;
+  -webkit-animation: slide-in-bck-center 0.4s;
 }
 
 .slide-in-bck-center {
-	-webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-bck-center 0.7s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* ----------------------------------------------
@@ -34,31 +35,30 @@
  * animation slide-in-bck-center
  * ----------------------------------------
  */
- @-webkit-keyframes slide-in-bck-center {
+@-webkit-keyframes slide-in-bck-center {
   0% {
     -webkit-transform: translateZ(600px);
-            transform: translateZ(600px);
+    transform: translateZ(600px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     opacity: 1;
   }
 }
 @keyframes slide-in-bck-center {
   0% {
     -webkit-transform: translateZ(600px);
-            transform: translateZ(600px);
+    transform: translateZ(600px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     opacity: 1;
   }
 }
-
 
 @media screen and (max-width: 1024px) {
   .container {
@@ -102,14 +102,14 @@
 }
 
 .active {
-  color: #D4B265 !important;
+  color: #d4b265 !important;
   font-weight: 600;
   text-decoration: underline !important;
 }
 
 .activeLanguage {
- font-weight: 600;
- text-decoration: underline;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .navMenuLarge {
@@ -136,18 +136,17 @@
   }
 }
 
-
 .hambi {
   display: none;
 }
 
 @media (max-width: 1100px) {
   .languageMenu {
-   display: none;
+    display: none;
   }
-.hambi {
-  display: block;
-}
+  .hambi {
+    display: block;
+  }
 }
 .mobileMenu {
   position: fixed;
@@ -155,7 +154,7 @@
   left: 0;
   width: 100vw;
   height: calc(100dvh + 40px);
-  background: linear-gradient(180deg, #004E1B -60.87%, #267331 100%);
+  background: linear-gradient(180deg, #004e1b -60.87%, #267331 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,7 +195,7 @@
 
 .mobileMenuList {
   list-style: none;
-  width: 100% ;
+  width: 100%;
   padding: 0;
   margin: 0;
   display: flex;
@@ -223,8 +222,6 @@
   gap: 20px;
   font-weight: 400;
   color: white;
-
-
 }
 
 .facebook {

@@ -45,7 +45,6 @@
   font-family: exo;
 }
 
-
 .desig {
   font-size: 17px;
   font-weight: 600;
@@ -53,10 +52,9 @@
   text-align: center;
   color: #222222;
   font-family: exo;
-
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .rigth {
     max-width: 219px;
   }

@@ -1,0 +1,90 @@
+.h1 {
+  font-family: var(--font-family-asap);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-h1);
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  margin-top: 10px;
+  background: #004e1b;
+  box-shadow: 0px 4px 50px 0px #6a583c0d;
+}
+
+.container {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 249, 234, 0.1) 0%,
+    rgba(114, 193, 28, 0.4) 100%
+  );
+  min-height: 50vh;
+  padding: 60px  5vw;
+}
+
+@media screen and (min-width:1923px) {
+    .container {
+    }
+}
+
+.h1Container{
+    margin: 0 auto;
+    max-width:1500px;
+
+}
+.containerTeam {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Set up 4 columns for consistency */
+    grid-template-rows: auto auto; 
+    gap: 2rem;
+    justify-items: center;
+    max-width:1500px;
+    margin: 0 auto;
+
+}
+
+.containerTeam2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Set up 4 columns for consistency */
+    grid-template-rows: auto auto; 
+    gap: 2rem;
+    justify-items: center;
+    max-width:1500px;
+    margin: 0 auto;
+
+}
+
+
+.teamItemContainer {
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.iamgeContainer {
+  margin-bottom: 5px;
+}
+.iamgeContainer img {
+  max-width: 160px;
+  height: auto;
+}

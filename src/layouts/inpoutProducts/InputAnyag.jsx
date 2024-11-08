@@ -4,7 +4,7 @@ import Buza from "../../../public/assets/input.webp";
 import Aniko from "../../../public/assets/aniko.png";
 import styles from "./InputAnyag.module.css";
 
-const InputAnyag = ({language}) => {
+const InputAnyag = ({ language }) => {
   return (
     <div className={styles.container}>
       <div className={styles.leftSection}>
@@ -46,22 +46,28 @@ const InputAnyag = ({language}) => {
               <h3 className={styles.productTitle}>{language.inputH3}</h3>
               <ul className={styles.productList}>
                 <li>
-                  <span className={styles.productBullet}>▪️</span>{language.inputList}
+                  <span className={styles.productBullet}>▪️</span>
+                  {language.inputList}
                 </li>
                 <li>
-                  <span className={styles.productBullet}>▪️</span>{language.inputList2}
+                  <span className={styles.productBullet}>▪️</span>
+                  {language.inputList2}
                 </li>
               </ul>
             </div>
             <div>
               {/* Special products */}
-              <h3 className={`${styles.productTitle}`}>{language.inputList3}</h3>
+              <h3 className={`${styles.productTitle}`}>
+                {language.inputList3}
+              </h3>
               <ul className={styles.productList}>
                 <li>
-                  <span className={styles.productBullet}>▪️</span>{language.inputList4}
+                  <span className={styles.productBullet}>▪️</span>
+                  {language.inputList4}
                 </li>
                 <li>
-                  <span className={styles.productBullet}>▪️</span>{language.inputList5}
+                  <span className={styles.productBullet}>▪️</span>
+                  {language.inputList5}
                 </li>
               </ul>
             </div>
@@ -76,9 +82,7 @@ const InputAnyag = ({language}) => {
             </div>
           </div>
           {/* Footer section */}
-          <p className={styles.footerText}>
-          {language.inputP2}
-          </p>
+          <p className={styles.footerText}>{language.inputP2}</p>
         </div>
       </div>
       <div className={styles.imageContainer}>
